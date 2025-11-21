@@ -17,7 +17,7 @@ export function Taskprovider({ children }) {
         setTasks(tasks.map(task => task.id === id ? {...task, complete: !task.completed} : task
         ))
     }
-}
+
 
 return (
     <TaskContext.Provider value = {{
@@ -30,3 +30,4 @@ return (
         {children}            
     </TaskContext.Provider>
 )
+}
